@@ -1,6 +1,10 @@
 ## Getting and Cleaning Data Peer-graded Assignment
 
 ## STEP 1
+## download data zip file and unpack in the working directory
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download.file(url, dest = "dataset.zip")
+unzip("dataset.zip", exdir = "./")
 ## read test data sets
 subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 measure_test <- read.table("./UCI HAR Dataset/test/X_test.txt")
